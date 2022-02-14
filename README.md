@@ -48,8 +48,7 @@ $ weex create weex-demo
 进入项目所在路径，如果你在生成项目的时候选择了自动安装依赖，在进入项目后只需直接运行 `npm start` 就可以将项目完整跑起来，否则，你需要预先在项目中运行一下 `npm install` 安装项目所需依赖。  
 
 `npm start`运行后工具会启动一个本地的 web 服务，监听 `8081` 端口。你可以打开 `http://localhost:8081` 查看页面在 Web 下的渲染效果。 源代码在 `src/` 目录中，你可以像一个普通的 Vue.js 项目一样来开发.
-预览效果图
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7767a7a77ef043c480448fac94d18451.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAemhpbWluZ3dlbg==,size_20,color_FFFFFF,t_70,g_se,x_16)
+
 
 ## 编译和运行
 默认情况下 `weex create` 命令并不初始化 iOS 和 Android 项目，你可以通过执行 `weex platform add` 来添加特定平台的项目。
