@@ -78,9 +78,11 @@ xcrun: error: unable to find utility "instruments", not a developer tool or in P
 命令行运行失败可能是weex打包工具weex-toolkit的问题，官方一直没有推出修复版。我们尝试其他办法运行项目，比如直接用xcode 运行是否可以呢？于是试试用xcode打开WeexDemo.xcworkspace，点击运行，发现还是报错 Pods-XXXXX.debug.xcconfig.xcconfig: unable to open file:
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/1f7a7a6c24ef4fc7b12676238a2f5374.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAemhpbWluZ3dlbg==,size_19,color_FFFFFF,t_70,g_se,x_16)
 这个是一个常见错误，解决办法很简单：
-我们先cd到iOS目录下，在命令行输入：
-1，sudo gem install cocoapods --pre
-2，pod install
+我们先cd到iOS目录下，在命令行依次输入：
+
+- cd platforms/ios
+- sudo gem install cocoapods --pre  
+- pod install
 
 然后运行结果依然是报错的：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/4075364e608b47cbb6ec9103c2208671.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAemhpbWluZ3dlbg==,size_20,color_FFFFFF,t_70,g_se,x_16)
