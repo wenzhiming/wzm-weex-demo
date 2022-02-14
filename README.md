@@ -76,7 +76,8 @@ Failed to locate 'instruments'
 xcrun: error: unable to find utility "instruments", not a developer tool or in PATH
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/0138945eab6f41a39f1827499181a441.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAemhpbWluZ3dlbg==,size_20,color_FFFFFF,t_70,g_se,x_16)
 命令行运行失败可能是weex打包工具weex-toolkit的问题，官方一直没有推出修复版。我们尝试其他办法运行项目，比如直接用xcode 运行是否可以呢？于是试试用xcode打开WeexDemo.xcworkspace，点击运行，发现还是报错 Pods-XXXXX.debug.xcconfig.xcconfig: unable to open file:
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1f7a7a6c24ef4fc7b12676238a2f5374.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAemhpbWluZ3dlbg==,size_19,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/1f7a7a6c24ef4fc7b12676238a2f5374.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAemhpbWluZ3dlbg==,size_19,color_FFFFFF,t_70,g_se,x_16)  
+
 这个是一个常见错误，解决办法很简单：
 我们先cd到iOS目录下，在命令行依次输入：
 
